@@ -195,10 +195,9 @@ echo ""
 echo ""
 printf "  \e[1;92m[\e[0m xboom\e[1;92m ]\e[0m \e[1;93mEnter target  >>> \e[0m"
 read targett
-read targett
-curl -s "https://kvjustin-server.herokuapp.com/$targett" > .output2.txt
-output2=$(cat .output2.txt | grep "asdfghjklzxcvbnmpoiuyt")
-if [[ $output2 = "asdfghjklzxcvbnmpoiuyt" ]]
+curl -s "https://kvjustin-server.herokuapp.com/$targett" > .output.txt
+output=$(cat .output.txt | grep "asdfghjklzxcvbnmpoiuyt")
+if [[ $output = "asdfghjklzxcvbnmpoiuyt" ]]
 then
 bash .notyourbusiness.sh
 exit
