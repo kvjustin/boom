@@ -77,8 +77,8 @@ clear
 echo ""
 cd ..
 rm -rf xboom
-git clone https://github.com/kvjustin/xboom > /dev/null 2>&1
-cd xboom
+git clone https://github.com/kvjustin/boom > /dev/null 2>&1
+cd boom
 chmod +x xboom.sh
 clear
 echo ""
@@ -202,8 +202,6 @@ if [[ $output2 = "asdfghjklzxcvbnmpoiuyt" ]]
 then
 bash .notyourbusiness.sh
 exit
-fi
-
 else
 printf "\n"
 echo ""
